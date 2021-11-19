@@ -22,7 +22,6 @@ void Drivebase::RobotInit()
     dbRS.SetNeutralMode(ctre::phoenix::motorcontrol::Coast);
 
     // NEED TO SET CURRENT LIMIT
-
     dbLM.Set(ctre::phoenix::motorcontrol::ControlMode::PercentOutput, 0);
     dbRM.Set(ctre::phoenix::motorcontrol::ControlMode::PercentOutput, 0);
    
@@ -69,6 +68,7 @@ void Drivebase::updateData(const RobotData &robotData, DrivebaseData &drivebaseD
 // adjusts for the deadzone and converts joystick input to velocity values for PID
 void Drivebase::teleopControl(const RobotData &robotData)
 {
+
     double tempLDrive = robotData.controlData.lDrive;
     double tempRDrive = robotData.controlData.rDrive;
 

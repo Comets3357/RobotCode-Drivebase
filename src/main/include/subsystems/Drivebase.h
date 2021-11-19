@@ -4,7 +4,7 @@
 
 #include <frc/DriverStation.h>
 #include <frc/TimedRobot.h>
-#include <ctre/phoenix/motorcontrol/can/TalonFX.h>
+#include <ctre/Phoenix.h>
 
 
 
