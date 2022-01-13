@@ -1,6 +1,5 @@
 #pragma once
 
-#include <adi/ADIS16448_IMU.h>
 
 struct GyroData
 {

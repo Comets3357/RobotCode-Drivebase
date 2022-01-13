@@ -2,14 +2,13 @@
 
 void Robot::RobotInit()
 {
-    timer.RobotInit(robotData.timerData);
+    // timer.RobotInit(robotData.timerData);
 
     drivebase.RobotInit();
 }
 
 void Robot::RobotPeriodic()
 {
-    timer.RobotPeriodic(robotData.timerData);
 
     if (IsEnabled())
     {
@@ -30,7 +29,7 @@ void Robot::TeleopPeriodic()
 
 void Robot::DisabledInit()
 {
-    timer.DisabledInit();
+    // timer.DisabledInit();
 
     drivebase.DisabledInit();
 }

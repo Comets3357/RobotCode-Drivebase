@@ -2,7 +2,7 @@
 
 #include <frc/BuiltInAccelerometer.h>
 #include <frc/Compressor.h>
-#include <frc/PowerDistributionPanel.h>
+#include <frc/PowerDistribution.h>
 
 struct OtherComponentsData
 {
@@ -22,9 +22,9 @@ private:
     // accelerometer
     frc::BuiltInAccelerometer accelerometer{};
 
-    // compressor
-    frc::Compressor compressor{0};
+    // // compressor
+    // frc::Compressor compressor{0};
 
-    // PDP
-    frc::PowerDistributionPanel pdp{0};
+    // // PDP
+    // frc::PowerDistributionPanel pdp{0};
 };

@@ -3,7 +3,7 @@
 #include "Constants.h"
 
 #include <frc/DriverStation.h>
-#include <frc/PowerDistributionPanel.h>
+#include <frc/PowerDistribution.h>
 #include <frc/TimedRobot.h>
 #include <rev/CANSparkMax.h>
 #include <rev/CANEncoder.h>
@@ -41,10 +41,10 @@ private:
     rev::CANSparkMax dbRS{rightFollowDeviceID,
                           rev::CANSparkMax::MotorType::kBrushless};
 
-    rev::CANEncoder dbRMEncoder = dbRM.GetEncoder();
-    rev::CANEncoder dbLMEncoder = dbLM.GetEncoder();
-    rev::CANEncoder dbRSEncoder = dbRS.GetEncoder();
-    rev::CANEncoder dbLSEncoder = dbLS.GetEncoder();
-    rev::CANPIDController dbRMPID = dbRM.GetPIDController();
-    rev::CANPIDController dbLMPID = dbLM.GetPIDController();
+    // rev::CANEncoder dbRMEncoder = dbRM.GetEncoder();
+    // rev::CANEncoder dbLMEncoder = dbLM.GetEncoder();
+    // rev::CANEncoder dbRSEncoder = dbRS.GetEncoder();
+    // rev::CANEncoder dbLSEncoder = dbLS.GetEncoder();
+    // rev::CANPIDController dbRMPID = dbRM.GetPIDController();
+    // rev::CANPIDController dbLMPID = dbLM.GetPIDController();
 };

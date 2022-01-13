@@ -20,7 +20,7 @@ struct RobotData
     OtherComponentsData otherComponentsData;
     GyroData gyroData;
     LimelightData limelightData;
-    TimerData timerData;
+    // TimerData timerData;
 
     AutonData autonData;
 

@@ -35,7 +35,7 @@ private:
     Gyro gyro{};
     Limelight limelight{};
     OtherComponents otherComponents{};
-    Timer timer{};
+    // Timer timer{};
 
     // subsystems
     Drivebase drivebase{};

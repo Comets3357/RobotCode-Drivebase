@@ -39,7 +39,7 @@ void Drivebase::RobotPeriodic(const RobotData &robotData, DrivebaseData &driveba
 {
     updateData(robotData, drivebaseData);
 
-    if (frc::DriverStation::GetInstance().IsEnabled())
+    if (frc::DriverStation::IsEnabled())
     {
         dbRM.SetIdleMode(rev::CANSparkMax::IdleMode::kBrake);
         dbRS.SetIdleMode(rev::CANSparkMax::IdleMode::kBrake);
@@ -64,11 +64,11 @@ void Drivebase::DisabledInit()
 void Drivebase::updateData(const RobotData &robotData, DrivebaseData &drivebaseData)
 {
     //add back wheel encoders at some point
-    drivebaseData.currentLDBPos = dbLMEncoder.GetPosition();
-    drivebaseData.currentRDBPos = dbRMEncoder.GetPosition();
+    // drivebaseData.currentLDBPos = dbLMEncoder.GetPosition();
+    // drivebaseData.currentRDBPos = dbRMEncoder.GetPosition();
 
-    drivebaseData.lDriveVel = dbRMEncoder.GetVelocity();
-    drivebaseData.rDriveVel = dbLMEncoder.GetVelocity();
+    // drivebaseData.lDriveVel = dbRMEncoder.GetVelocity();
+    // drivebaseData.rDriveVel = dbLMEncoder.GetVelocity();
 }
 // driving functions:
 
