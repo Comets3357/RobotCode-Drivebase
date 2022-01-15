@@ -32,10 +32,10 @@ private:
 
     // other
     Controller controller{};
-    Gyro gyro{};
-    Limelight limelight{};
+    // Gyro gyro{};
+    // Limelight limelight{};
     OtherComponents otherComponents{};
-    Timer timer{};
+    // Timer timer{};
 
     // subsystems
     Drivebase drivebase{};

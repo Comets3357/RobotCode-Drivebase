@@ -31,7 +31,7 @@ void Drivebase::RobotPeriodic(const RobotData &robotData, DrivebaseData &driveba
 {
     updateData(robotData, drivebaseData);
 
-    if (frc::DriverStation::GetInstance().IsEnabled())
+    if (frc::DriverStation::IsEnabled())
     {
         dbRM.SetNeutralMode(ctre::phoenix::motorcontrol::Brake);
         dbRS.SetNeutralMode(ctre::phoenix::motorcontrol::Brake);

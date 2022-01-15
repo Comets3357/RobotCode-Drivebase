@@ -33,8 +33,8 @@ private:
     void teleopControl(const RobotData &robotData);
 
 
-    ctre::phoenix::motorcontrol::can::TalonFX dbLM{1};
-    ctre::phoenix::motorcontrol::can::TalonFX dbLS{2};
-    ctre::phoenix::motorcontrol::can::TalonFX dbRM{3};
-    ctre::phoenix::motorcontrol::can::TalonFX dbRS{4};
+    ctre::phoenix::motorcontrol::can::TalonFX dbLM{leftLeadDeviceID};
+    ctre::phoenix::motorcontrol::can::TalonFX dbLS{leftFollowDeviceID};
+    ctre::phoenix::motorcontrol::can::TalonFX dbRM{rightLeadDeviceID};
+    ctre::phoenix::motorcontrol::can::TalonFX dbRS{rightFollowDeviceID};
 };

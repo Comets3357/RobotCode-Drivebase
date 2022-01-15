@@ -3,9 +3,9 @@
 // includes other files' data
 #include "controller/Controller.h"
 #include "common/OtherComponents.h"
-#include "common/Gyro.h"
-#include "common/Limelight.h"
-#include "common/Timer.h"
+// #include "common/Gyro.h"
+// #include "common/Limelight.h"
+// #include "common/Timer.h"
 
 #include "auton/Auton.h"
 
@@ -18,9 +18,9 @@ struct RobotData
     ControllerData controllerData;
     ControlData controlData;
     OtherComponentsData otherComponentsData;
-    GyroData gyroData;
-    LimelightData limelightData;
-    TimerData timerData;
+    // GyroData gyroData;
+    // LimelightData limelightData;
+    // TimerData timerData;
 
     AutonData autonData;
 

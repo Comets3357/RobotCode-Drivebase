@@ -67,7 +67,7 @@ void Controller::updateBtnData(ControllerData &controllerData)
 {
     // primary controls:
 
-    if (frc::DriverStation::GetInstance().GetJoystickName(0) == "FrSky Taranis Joystick")
+    if (frc::DriverStation::GetJoystickName(0) == "FrSky Taranis Joystick")
     {
         // if using the flight stick, axises are inverted compared to xbox
         controllerData.pLYStick = getAxis(0, 0);
